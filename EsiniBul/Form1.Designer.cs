@@ -44,10 +44,13 @@ namespace EsiniBul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 527);
+            this.ClientSize = new System.Drawing.Size(524, 525);
             this.Controls.Add(this.pnlKartlar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eşini Bul";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
 
         }
